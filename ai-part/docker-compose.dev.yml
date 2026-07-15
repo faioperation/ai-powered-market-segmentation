@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    environment:
+      - INGEST_DRY=1
+    volumes:
+      - .:/app
+    # Overwrite healthcheck during development if desired
